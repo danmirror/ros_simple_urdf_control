@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<robot name="mybot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+     <!-- link 1  -->
+      <link name="link_chassis">
+         <pose>0 0 0.1 0 0 </pose>
+         <inertial>
+            <mass value="5" />
+            <origin rpy=" 0 0 0" xyz="0 0 0.1"/>
+            <inertia ixx="0.39999" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.1111" />
+          </inertial>
+         <collision name="collision_chassis">
+            <geometry>
+               <box size="2 2 1" />
+            </geometry>
+          </collision>
+          <visual >
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+               <box size="2 2 1" />
+            </geometry>
+          </visual>
+      </link>
+
+      <joint name="joint1" type="continuous">
+         <origin rpy="0 0 0" xyz="0.6 0 0.6"/>
+         <parent link="link_chassis"/>
+         <child link="link_arm"/>
+      </joint>
+
+        <link name="link_arm">
+         <pose>0 0 0 0 0 </pose>
+         <inertial>
+            <mass value="0.5" />
+            <origin rpy=" 0 0 0" xyz="0 0 0.1"/>
+            <inertia ixx="0.39999" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.1111" />
+          </inertial>
+         <collision name="collision_chassis">
+            <geometry>
+               <box size="0.2 0.2 1" />
+            </geometry>
+          </collision>
+          <visual >
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+               <box size="0.2 0.2 1" />
+            </geometry>
+          </visual>
+      </link>
+
+</robot>
