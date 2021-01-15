@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+
 <robot name="mybot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
@@ -64,14 +65,14 @@
     <collision>
       <origin xyz="${casterRadius-chassisLength/2} 0 ${casterRadius-chassisHeight+wheelRadius}" rpy="0 0 0"/>
       <geometry>
-	<sphere radius="${casterRadius}"/>
+	      <sphere radius="${casterRadius}"/>
       </geometry>
     </collision>
   
     <visual> 
       <origin xyz="${casterRadius-chassisLength/2} 0 ${casterRadius-chassisHeight+wheelRadius}" rpy="0 0 0"/>
       <geometry>
-	<sphere radius="${casterRadius}"/>
+	      <sphere radius="${casterRadius}"/>
       </geometry>
     </visual>
 
@@ -81,7 +82,6 @@
       <sphere_inertia m="${casterMass}" r="${casterRadius}"/>
     </inertial>
   </link>
-
 
   <wheel lr="left" tY="-1"/>
   <wheel lr="right" tY="1"/>
