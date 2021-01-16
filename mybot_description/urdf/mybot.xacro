@@ -36,14 +36,14 @@
     <collision>
       <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/>
       <geometry>
-	<box size="${chassisLength} ${chassisWidth} ${chassisHeight}"/>
+        <box size="${chassisLength} ${chassisWidth} ${chassisHeight}"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/>
       <geometry>
-	<box size="${chassisLength} ${chassisWidth} ${chassisHeight}"/>
+        <box size="${chassisLength} ${chassisWidth} ${chassisHeight}"/>
       </geometry>
       <material name="orange"/>
     </visual>
@@ -86,5 +86,27 @@
   <wheel lr="left" tY="-1"/>
   <wheel lr="right" tY="1"/>
 
+  <!-- <link name="camera">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <inertial>
+      <mass value="${cameraMass}" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
+    </inertial>
+  </link> -->
 
 </robot>
