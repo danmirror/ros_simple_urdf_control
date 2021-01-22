@@ -1,4 +1,5 @@
 # ros_simple_urdf_control
+> i was influenced by <a href="https://blog.generationrobots.com/en/robotic-simulation-scenarios-with-gazebo-and-ros/#TOC"> this</a> and i modified it.
 
 ##  launch
 > roslaunch mybot_gazebo mybot_world.launch
