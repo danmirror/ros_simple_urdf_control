@@ -2,11 +2,10 @@
 # license removed for brevity
 import rospy
 from std_msgs.msg import Float64
-import math
 
 def talker():
     pub = rospy.Publisher('/mybot/rightWheel_effort_controller/command', Float64, queue_size=10)
-    rospy.init_node('talker', anonymous=True)
+    rospy.init_node('mybot', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
         
