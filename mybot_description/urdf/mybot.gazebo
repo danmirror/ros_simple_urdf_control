@@ -13,21 +13,21 @@
    </gazebo>
 
 <!-- ===============telop============== -->
-   <!-- <gazebo>
-  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
-    <alwaysOn>true</alwaysOn>
-    <updateRate>100</updateRate>
-    <leftJoint>left_wheel_hinge</leftJoint>
-    <rightJoint>right_wheel_hinge</rightJoint>
-    <wheelSeparation>${chassisWidth+wheelWidth}</wheelSeparation>
-    <wheelDiameter>${2*wheelRadius}</wheelDiameter>
-    <torque>20</torque>
-    <commandTopic>mybot/cmd_vel</commandTopic>
-    <odometryTopic>mybot/odom_diffdrive</odometryTopic>
-    <odometryFrame>odom</odometryFrame>
-    <robotBaseFrame>footprint</robotBaseFrame>
-  </plugin>
-</gazebo> -->
+  <!-- <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>100</updateRate>
+      <leftJoint>left_wheel_hinge</leftJoint>
+      <rightJoint>right_wheel_hinge</rightJoint>
+      <wheelSeparation>${chassisWidth+wheelWidth}</wheelSeparation>
+      <wheelDiameter>${2*wheelRadius}</wheelDiameter>
+      <torque>20</torque>
+      <commandTopic>mybot/cmd_vel</commandTopic>
+      <odometryTopic>mybot/odom_diffdrive</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>footprint</robotBaseFrame>
+    </plugin>
+  </gazebo> -->
 
 
  <gazebo>
